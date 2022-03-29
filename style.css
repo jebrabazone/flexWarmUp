@@ -1,0 +1,60 @@
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display:flex;
+    background-color: #f4f4f4;
+    /* always on the main axis */
+    /* justify-content: space-between; */
+    /* Align-items is always on the cross axis */
+    /* align-items:start; */
+    /* flex-wrap puts excess things it cannot fit into the next row */
+    /* flex-wrap:wrap; */
+
+
+
+
+}
+
+
+
+.item{
+    flex:1 0 100px;
+    /* Use this for setting the initial main size of a flex item.  */
+    height:100px;
+    background:#254de4;
+    color:#ffffff;
+    margin:10px;
+
+    display:flex;
+    justify-content:center;
+    /* This is the text within the Div element. Now it is centered in container */
+    align-items:center;
+}
+
+.item:nth-of-type(1){
+    /* flex-grow is used to set the growth factor of a flex item's main size */
+    /* flex-grow:3; */
+    flex-shrink:0;
+
+}
+
+
+.item:nth-of-type(2){
+    /* flex-shrink affects the shrinkage of a flex items main size */
+    flex-shrink:1;
+    
+}
+
+.item:nth-of-type(3){
+    flex-shrink:2;
+
+}
